@@ -1,4 +1,3 @@
-
 /**
  * Module dependencies.
  */
@@ -50,7 +49,7 @@ function Overlay(options) {
  * Inherits from `Emitter.prototype`.
  */
 
-Overlay.prototype.__proto__ = Emitter.prototype;
+Overlay.prototype = new Emitter;
 
 /**
  * Show the overlay.
